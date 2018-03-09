@@ -17,10 +17,18 @@ class CustomNavbar extends Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight style={{ padding: '5px' }}>
-            <NavItem href="/">Inicio</NavItem>
-            <NavItem href="/actividades">Actividades</NavItem>
-            <NavItem href="/registro">Registro</NavItem>
-            <NavItem href="/perfil">Perfil</NavItem>
+            <NavItem eventKey={1} href="/">
+              Inicio
+            </NavItem>
+            <NavItem eventKey={2} href="/actividades">
+              Actividades
+            </NavItem>
+            <NavItem eventKey={1} href="/inscripcion">
+              ¡Inscríbete!
+            </NavItem>
+            <NavItem eventKey={2} href="/perfil">
+              Perfil
+            </NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
