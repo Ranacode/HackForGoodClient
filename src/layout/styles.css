@@ -2,3 +2,47 @@
   background: white;
   color: black;
 }
+
+footer {
+  background: gray;
+  height: auto;
+}
+
+.socialLogos {
+  text-align: center;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.footerListContainer {
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerListContainer ul {
+  padding: 0;
+}
+
+.footerListContainer ul li {
+  padding: 0.3em;
+  margin: 0 0.7em;
+  font-size: 19px;
+}
+
+.logosContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.ccSvg {
+  margin: 0 30px;
+  height: 42px;
+}

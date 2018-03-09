@@ -11,9 +11,9 @@ class Activities extends Component {
   state = {};
   render() {
     return (
-      <div style={{ marginTop: '5%' }}>
+      <div style={{ marginTop: '5%', textAlign: 'center' }}>
         <h1>Actividades</h1>
-        <Grid fluid>
+        <Grid>
           <Row>
             <Col className="nopadding" xs={12} md={6} lg={6}>
               <Image width="951.5" height="530" src={Activity1} responsive />
