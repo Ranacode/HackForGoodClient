@@ -6,7 +6,7 @@ class CustomNavbar extends Component {
   state = {};
   render() {
     return (
-      <Navbar collapseOnSelect staticTop className="navbar">
+      <Navbar collapseOnSelect fixedTop className="navbar">
         <Navbar.Header>
           <Navbar.Brand>
             <a href="#brand">Logo</a>
