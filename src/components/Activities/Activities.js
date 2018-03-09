@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-
-import { Grid, Row, Col, Image } from 'react-bootstrap';
+import { Grid, Row } from 'react-bootstrap';
+import ActivityTitle from './ActivityTitle';
+import ActivityImage from './ActivityImages/ActivityImage';
 import Activity1 from '../../assets/images/activity1.jpg';
 import Activity2 from '../../assets/images/activity2.jpg';
 import Activity3 from '../../assets/images/activity3.jpg';
@@ -8,35 +9,22 @@ import Activity3 from '../../assets/images/activity3.jpg';
 import './activities.css';
 
 class Activities extends Component {
-  state = {};
+  state = {
+    activities: [],
+  };
+
+  componentDidMount() {}
+
   render() {
     return (
-      <div style={{ marginTop: '5%', textAlign: 'center' }}>
-        <h1>Actividades</h1>
+      <div className="main__container">
+        <ActivityTitle title="Últimas publicaciones de actividades" />
         <Grid>
           <Row>
-            <Col className="nopadding" xs={12} md={6} lg={6}>
-              <Image width="951.5" height="530" src={Activity1} responsive />
-            </Col>
-            <Col className="nopadding" xs={12} md={6} lg={6}>
-              <Image width="951.5" height="530" src={Activity2} responsive />
-            </Col>
-          </Row>
-          <Row>
-            <Col className="nopadding" xs={12} md={6} lg={6}>
-              <Image width="951.5" height="530" src={Activity3} responsive />
-            </Col>
-            <Col className="nopadding" xs={12} md={6} lg={6}>
-              <Image width="951.5" height="530" src={Activity1} responsive />
-            </Col>
-          </Row>
-          <Row>
-            <Col className="nopadding" xs={12} md={6} lg={6}>
-              <Image width="950.5" height="530" src={Activity2} responsive />
-            </Col>
-            <Col className="nopadding" xs={12} md={6} lg={6}>
-              <Image width="950.5" height="530" src={Activity3} responsive />
-            </Col>
+            <ActivityImage src={Activity1} />
+            <ActivityImage src={Activity2} />
+            <ActivityImage src={Activity3} />
+            <ActivityImage src={Activity1} />
           </Row>
         </Grid>
       </div>

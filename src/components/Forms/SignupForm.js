@@ -58,7 +58,6 @@ class SignupForm extends Component {
           <InputGroup>
             <InputGroup.Addon>
               <i className="fas fa-phone fa-2x" />
-              +34
             </InputGroup.Addon>
             <FormControl
               required

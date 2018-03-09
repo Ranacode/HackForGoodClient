@@ -2,3 +2,42 @@
   padding-left: 0px;
   padding-right: 0px;
 }
+
+.gallery .image__container {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery .image__container img {
+  padding: 0.2em;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  border: 1px solid #dbdbdb;
+}
+
+.gallery .image__container:hover img {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+.main__container {
+  margin: 5% 0;
+}
+
+.title__container {
+  margin: 7% auto 4% auto;
+  font-size: 44px;
+  font-weight: bold;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  padding: 0.5em;
+  max-width: 80%;
+  border-radius: 8px;
+}
+
+.title__container h1 {
+  margin: 0.2em 0;
+  padding: 0.2em;
+  text-align: center;
+  font-family: MyriadPro, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}

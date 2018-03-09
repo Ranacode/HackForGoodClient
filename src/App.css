@@ -1,5 +1,11 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+}
+
 @font-face {
-  font.family: MyriadPro;
+  font.family: "MyriadPro";
   font-weight: bold;
   src: url("./assets/webfonts/MyriadPro-Bold.otf");
 }
