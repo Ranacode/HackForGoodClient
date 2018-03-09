@@ -1,11 +1,30 @@
 import React, { Component } from 'react';
-import { Grid, Row, Navbar as Nav } from 'react-bootstrap';
+import { Grid, Row, Navbar, Nav, NavItem } from 'react-bootstrap';
 
-class Navbar extends Component {
+class CustomNavbar extends Component {
   state = {};
   render() {
-    return <div>navbar</div>;
+    return (
+      <Navbar inverse collapseOnSelect staticTop>
+        <Navbar.Header>
+          <Navbar.Brand>
+            <a href="#brand">Logo</a>
+          </Navbar.Brand>
+          <Navbar.Toggle />
+        </Navbar.Header>
+        <Navbar.Collapse>
+          <Nav pullRight>
+            <NavItem eventKey={1} href="#">
+              Link
+            </NavItem>
+            <NavItem eventKey={2} href="#">
+              Link
+            </NavItem>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    );
   }
 }
 
-export default Navbar;
+export default CustomNavbar;
