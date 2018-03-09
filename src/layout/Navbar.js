@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import ReactSVG from 'react-svg';
 import './styles.css';
+import bicuoLogo from '../assets/images/logos/bicuo.svg';
 
 class CustomNavbar extends Component {
   state = {};
@@ -9,7 +11,7 @@ class CustomNavbar extends Component {
       <Navbar collapseOnSelect fixedTop className="navbar">
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#brand">Logo</a>
+            <ReactSVG path={bicuoLogo} />
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>

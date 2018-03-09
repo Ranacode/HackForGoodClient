@@ -14,52 +14,28 @@ class Home extends Component {
             <CustomCarousel />
           </Row>
           <Row className="row">
-            <Col xs={12} md={6} lg={8}>
-              <h2> ¿Qué hacemos? </h2>
-              <p>párrafo</p>
+            <Col xs={12} md={6} lg={6}>
+              <h2> Nuestro objetivo </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
+                nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                justo.{' '}
+              </p>
             </Col>
-            <Col xs={12} md={6} lg={4}>
+            <Col xs={12} md={6} lg={6}>
               <h2>Nuestros valores</h2>
-              <p>párrafo</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
+                nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                justo.{' '}
+              </p>
             </Col>
-          </Row>
-          <Row className="row">
-            <h2> Nuestro equipo </h2>
-            <Col xs={12} md={6} lg={4}>
-              <img src="" alt="imagenEquipo" />
-            </Col>
-            <Col xs={12} md={6} lg={4}>
-              <img src="" alt="imagenEquipo" />
-            </Col>
-            <Col xs={12} md={6} lg={4}>
-              <img src="" alt="imagenEquipo" />
-            </Col>
-          </Row>
-          <Row className="row">
-            <Col xs={12} md={6} lg={4}>
-              <img src="" alt="imagenEquipo" />
-            </Col>
-            <Col xs={12} md={6} lg={4}>
-              <img src="" alt="imagenEquipo" />
-            </Col>
-            <Col xs={12} md={6} lg={4}>
-              <img src="" alt="imagenEquipo" />
-            </Col>
-          </Row>
-          <Row className="row">
-            <Col xs={12} md={6} lg={4}>
-              <img src="" alt="imagenEquipo" />
-            </Col>
-            <Col xs={12} md={6} lg={4}>
-              <img src="" alt="imagenEquipo" />
-            </Col>
-            <Col xs={12} md={6} lg={4}>
-              <img src="" alt="imagenEquipo" />
-            </Col>
-          </Row>
-          <Row className="row">
-            <h2> Nuestra historia</h2>
-            <p>párrafo</p>
           </Row>
         </Grid>
       </div>
