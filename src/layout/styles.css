@@ -2,3 +2,10 @@
   background: white;
   color: black;
 }
+
+.navbar ul {
+  margin-top: 2%;
+}
+.navbar ul li {
+  font-size: 22px;
+}

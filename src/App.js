@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import Activities from './components/Activities/Activities';
 import PageNotFound from './components/PageNotFound/PageNotFound';
 import Form from './components/Forms/Form';
+import Geo from './components/Geo/Geo';
 import './App.css';
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
               <Route exact path="/" component={Home} />
               <Route exact path="/actividades" component={Activities} />
               <Route exact path="/inscripcion" component={Form} />
+              <Route exact path="/geoexample" component={Geo} />
               <Route component={PageNotFound} />
             </Switch>
           </BrowserRouter>

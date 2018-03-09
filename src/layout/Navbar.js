@@ -11,12 +11,12 @@ class CustomNavbar extends Component {
       <Navbar collapseOnSelect fixedTop className="navbar">
         <Navbar.Header>
           <Navbar.Brand>
-            <ReactSVG path={bicuoLogo} />
+            <ReactSVG path={bicuoLogo} style={{ width: 195, height: 'auto' }} />
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-          <Nav pullRight style={{ padding: '5px' }}>
+          <Nav pullRight>
             <NavItem eventKey={1} href="/">
               Inicio
             </NavItem>
@@ -24,10 +24,10 @@ class CustomNavbar extends Component {
               Actividades
             </NavItem>
             <NavItem eventKey={1} href="/inscripcion">
-              ¡Inscríbete!
+              ¿Ya tienes una cuenta?
             </NavItem>
-            <NavItem eventKey={2} href="/perfil">
-              Perfil
+            <NavItem eventKey={2} href="/inscripcion">
+              ¡REGISTRATE!
             </NavItem>
           </Nav>
         </Navbar.Collapse>
