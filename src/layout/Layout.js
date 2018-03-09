@@ -7,6 +7,7 @@ class Layout extends Component {
   render() {
     return (
       <div>
+        <p>da</p>
         <Navbar />
         {this.props.children}
         <Footer />
