@@ -21,7 +21,7 @@ class CustomNavbar extends Component {
             <NavItem eventKey={2} href="/actividades">
               Actividades
             </NavItem>
-            <NavItem eventKey={1} href="/resgistro">
+            <NavItem eventKey={1} href="/registro">
               Registro
             </NavItem>
             <NavItem eventKey={2} href="/perfil">
