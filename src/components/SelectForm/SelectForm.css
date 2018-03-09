@@ -1,0 +1,19 @@
+.selectGrid {
+  margin-top: 10%;
+}
+.selectGrid img {
+  cursor: pointer;
+  padding: 0.5em;
+  transition: 0.3s ease all;
+}
+
+.selectGrid img:hover {
+  transform: scale(1.1);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 593px) {
+  .selectGrid {
+    margin-top: 20%;
+  }
+}
