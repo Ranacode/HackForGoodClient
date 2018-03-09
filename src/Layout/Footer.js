@@ -6,21 +6,23 @@ class Footer extends Component {
   render() {
     return (
       <footer style={{ background: 'gray' }}>
-        <Row>Social media</Row>
-        <Row>
-          <Col xs={12} md={6} lg={4}>
-            {' '}
-            Links 1
-          </Col>
-          <Col xs={12} md={6} lg={4}>
-            {' '}
-            Links 2
-          </Col>
-          <Col xs={12} md={12} lg={4}>
-            {' '}
-            Logos{' '}
-          </Col>
-        </Row>
+        <Grid>
+          <Row>Social media</Row>
+          <Row>
+            <Col xs={12} md={6} lg={4}>
+              {' '}
+              Links 1
+            </Col>
+            <Col xs={12} md={6} lg={4}>
+              {' '}
+              Links 2
+            </Col>
+            <Col xs={12} md={12} lg={4}>
+              {' '}
+              Logos
+            </Col>
+          </Row>
+        </Grid>
       </footer>
     );
   }
