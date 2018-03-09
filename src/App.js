@@ -16,11 +16,8 @@ class App extends Component {
           <BrowserRouter>
             <Switch>
               <Route exact path="/" component={Home} />
-<<<<<<< HEAD
               <Route exact path="/actividades" component={Activities} />
-=======
               <Route exact path="/inscripcion" component={Form} />
->>>>>>> upstream/master
               <Route component={PageNotFound} />
             </Switch>
           </BrowserRouter>
