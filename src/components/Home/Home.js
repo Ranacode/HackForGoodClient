@@ -2,6 +2,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import React, { Component } from 'react';
 import { Grid, Row, Col, Image, Button } from 'react-bootstrap';
 import CustomCarousel from '../Carousel/Carousel';
+import PhoneSVG from '../../assets/images/auricular-phone-symbol-in-a-circle.svg';
 import './home.css';
 
 class Home extends Component {
@@ -9,7 +10,6 @@ class Home extends Component {
   render() {
     return (
       <div style={{ marginTop: '5%', textAlign: 'center' }}>
-        <h1> INICIO</h1>
         <Grid>
           <Row>
             <CustomCarousel />
@@ -62,9 +62,26 @@ class Home extends Component {
               />
             </Col>
             <Col xs={12} md={12} lg={12} className="landing">
-              <h2 className="homeTitles">¿Necesitas ayuda?</h2>
-              <h3 className="homeSubtitles">Contacta con nosotros</h3>
-              <h3>928235478</h3>
+              <h1 className="homeTitles">¿Necesitas ayuda?</h1>
+              <h4 className="homeSubtitles">Contacta con nosotros</h4>
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignContent: 'center',
+                  alignItems: 'center',
+                  marginBottom: 10,
+                }}
+              >
+                <Image
+                  style={{ marginRight: 10 }}
+                  width="45"
+                  height="45"
+                  src={PhoneSVG}
+                  responsive
+                />
+                <h1>928235478</h1>
+              </div>
               <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
                 dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,

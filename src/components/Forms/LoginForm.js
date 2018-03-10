@@ -37,7 +37,7 @@ class LoginForm extends Component {
       <Grid>
         <Row className="show-grid">
           <Col xs={8} xsOffset={2} sm={8} smOffset={2} md={8} mdOffset={2} lg={4} lgOffset={4}>
-            <form className="form__container" action="/user/login" method="POST">
+            <form className="loginForm__container" action="/user/login" method="POST">
               <FormGroup>
                 <InputGroup>
                   <InputGroup.Addon>

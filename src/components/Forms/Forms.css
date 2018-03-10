@@ -5,6 +5,12 @@
   font-size: 20px;
 }
 
+.loginForm__container {
+  margin: 50% 0;
+  border: 1px solid #dbdbdb;
+  padding: 0.7em;
+  font-size: 20px;
+}
 .form__container label {
   margin: 0.5em;
 }

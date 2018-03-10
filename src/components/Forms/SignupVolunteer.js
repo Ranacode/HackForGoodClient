@@ -8,7 +8,7 @@ import {
   Button,
   Image,
 } from 'react-bootstrap';
-import RegisterButton from '../../assets/images/buttons/REGISTRARSE.svg';
+import RegisterButton from '../../assets/images/buttons/Cerrar.svg';
 
 class SignupForm extends Component {
   state = {
@@ -126,7 +126,7 @@ class SignupForm extends Component {
           <FormControl.Feedback />
         </FormGroup>
         <Button block className="removeButtonStyles" type="submit">
-          <Image src={RegisterButton} style={{ width: 250, height: 'auto' }} />
+          <Image src={RegisterButton} style={{ width: 200, height: 'auto' }} />
         </Button>
       </form>
     );
