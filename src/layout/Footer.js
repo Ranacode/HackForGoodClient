@@ -16,14 +16,14 @@ class Footer extends Component {
         <div className="footerContainer">
           <div className="footerListContainer">
             <ul className="list-unstyled">
-              <li> Link </li>
-              <li> Link </li>
-              <li> Link </li>
+              <li> Contacta con nosotros </li>
+              <li> Asociaciones </li>
+              <li> Colabora </li>
             </ul>
             <ul className="list-unstyled">
-              <li> Link </li>
-              <li> Link </li>
-              <li> Link </li>
+              <li> Política de privacidad </li>
+              <li> Política de cookies </li>
+              <li> Inscribete </li>
             </ul>
           </div>
           <div className="logosContainer">
