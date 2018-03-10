@@ -34,7 +34,14 @@ class SignupForm extends Component {
       <form className="form__container" action="/user/login" method="POST">
         <FormGroup controlId="formInlineLaneGeneral" validationState={this.validateGeneralData()}>
           <ControlLabel>Nombre</ControlLabel>
-          <FormControl required type="text" value={name} name="name" onChange={this.handleChange} />
+          <FormControl
+            placeholder="Nombre aqui"
+            required
+            type="text"
+            value={name}
+            name="name"
+            onChange={this.handleChange}
+          />
           <FormControl.Feedback />
           <ControlLabel>Apellidos</ControlLabel>
           <FormControl
@@ -107,7 +114,7 @@ class SignupForm extends Component {
           />
           <FormControl.Feedback />
         </FormGroup>
-        <Button type="submit">¡Quiero inscribirme!</Button>
+        <Button type="submit">¡Quiero registrarme!</Button>
       </form>
     );
   }

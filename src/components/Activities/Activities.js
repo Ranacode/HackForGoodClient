@@ -10,7 +10,47 @@ import './activities.css';
 
 class Activities extends Component {
   state = {
-    activities: [],
+    activities: [
+      {
+        id: '28392832',
+        title: 'Titulo de la actividad',
+        image: Activity1,
+        localization: {
+          city: 'Las Palmas de G.C',
+          latitude: 88.0002211,
+          longitude: 78.939191,
+        },
+        information:
+          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus error laudantium repellat, dolor mollitia eum laborum odio ipsa tempore vitae commodi temporibus et at consequatur delectus eaque possimus nihil reiciendis.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus error laudantium repellat, dolor mollitia eum laborum odio ipsa tempore vitae commodi temporibus et at consequatur delectus eaque possimus nihil reiciendis.',
+        deadline: new Date().toLocaleDateString(),
+      },
+      {
+        id: '28312832',
+        title: 'Titulo de la actividad',
+        image: Activity2,
+        localization: {
+          city: 'Las Palmas de G.C',
+          latitude: 88.0002211,
+          longitude: 78.939191,
+        },
+        information:
+          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus error laudantium repellat, dolor mollitia eum laborum odio ipsa tempore vitae commodi temporibus et at consequatur delectus eaque possimus nihil reiciendis.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus error laudantium repellat, dolor mollitia eum laborum odio ipsa tempore vitae commodi temporibus et at consequatur delectus eaque possimus nihil reiciendis.',
+        deadline: new Date().toLocaleDateString(),
+      },
+      {
+        id: '28392822',
+        title: 'Titulo de la actividad',
+        image: Activity3,
+        localization: {
+          city: 'Las Palmas de G.C',
+          latitude: 88.0002211,
+          longitude: 78.939191,
+        },
+        information:
+          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus error laudantium repellat, dolor mollitia eum laborum odio ipsa tempore vitae commodi temporibus et at consequatur delectus eaque possimus nihil reiciendis.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus error laudantium repellat, dolor mollitia eum laborum odio ipsa tempore vitae commodi temporibus et at consequatur delectus eaque possimus nihil reiciendis.',
+        deadline: new Date().toLocaleDateString(),
+      },
+    ],
   };
 
   componentDidMount() {}
@@ -21,10 +61,9 @@ class Activities extends Component {
         <ActivityTitle title="Últimas publicaciones de actividades" />
         <Grid>
           <Row>
-            <ActivityImage src={Activity1} />
-            <ActivityImage src={Activity2} />
-            <ActivityImage src={Activity3} />
-            <ActivityImage src={Activity1} />
+            {this.state.activities.map(activity => (
+              <ActivityImage key={activity.id} data={activity} />
+            ))}
           </Row>
         </Grid>
       </div>
