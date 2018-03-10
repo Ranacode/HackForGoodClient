@@ -1,5 +1,6 @@
 import React from 'react';
 import { Modal, Button, Panel } from 'react-bootstrap';
+import SimpleMap from '../../GoogleMap/SimpleMap';
 
 const ActivityModal = props => (
   <Modal {...props} bsSize="large" aria-labelledby="contained-modal-title-lg">
@@ -12,6 +13,9 @@ const ActivityModal = props => (
     </Modal.Header>
     <Modal.Body>
       <Panel.Body>{props.data.information}</Panel.Body>
+      <div style={{ width: '100%', height: '400px' }}>
+        <SimpleMap />
+      </div>
     </Modal.Body>
     <Modal.Footer>
       <Panel>
