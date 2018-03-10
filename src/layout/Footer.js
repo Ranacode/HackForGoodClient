@@ -1,49 +1,38 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col, Image } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 import ReactSVG from 'react-svg';
 import ulpgcLogo from '../assets/images/logos/ulpgc.png';
 import ccLogo from '../assets/images/logos/cc.svg';
-import socialMediaLogos from '../assets/images/social/redesSociales.svg';
+import socialMediaLogos from '../assets/images/social/redesSociales.png';
 
 class Footer extends Component {
   state = {};
   render() {
     return (
-      <footer style={{ background: 'gray' }}>
-        <Grid fluid>
-          <Row>
-            <ReactSVG path={socialMediaLogos} />
-          </Row>
-          <Row>
-            <Col xs={12} md={6} lg={4}>
-              {' '}
-              <ul className="list-unstyled">
-                <li> Link </li>
-                <li> Link </li>
-                <li> Link </li>
-                <li> Link </li>
-                <li> Link </li>
-                <li> Link </li>
-              </ul>
-            </Col>
-            <Col xs={12} md={6} lg={4}>
-              {' '}
-              <ul className="list-unstyled">
-                <li> Link </li>
-                <li> Link </li>
-                <li> Link </li>
-                <li> Link </li>
-                <li> Link </li>
-                <li> Link </li>
-              </ul>
-            </Col>
-            <Col xs={12} md={12} lg={4}>
-              {' '}
-              <Image width="300" height="100" src={ulpgcLogo} alt="" responsive />
-              <ReactSVG path={ccLogo} />
-            </Col>
-          </Row>
-        </Grid>
+      <footer>
+        <div className="socialLogos">
+          <Image width="250" height="75" src={socialMediaLogos} />
+        </div>
+        <div className="footerContainer">
+          <div className="footerListContainer">
+            <ul className="list-unstyled">
+              <li> Contacta con nosotros </li>
+              <li> Asociaciones </li>
+              <li> Colabora </li>
+            </ul>
+            <ul className="list-unstyled">
+              <li> Política de privacidad </li>
+              <li> Política de cookies </li>
+              <li> Inscribete </li>
+            </ul>
+          </div>
+          <div className="logosContainer">
+            <Image width="100" height="100" src={ulpgcLogo} alt="" responsive />
+            <div className="ccSvg">
+              <ReactSVG path={ccLogo} responsive />
+            </div>
+          </div>
+        </div>
       </footer>
     );
   }

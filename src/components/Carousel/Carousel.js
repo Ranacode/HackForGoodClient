@@ -1,33 +1,25 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
-import EnContruccion from '../../assets/images/EnConstruccion.jpg';
+import { Image } from 'react-bootstrap';
+import { Carousel } from 'react-responsive-carousel';
+import Activity1 from '../../assets/images/activity1.jpg';
+import Activity2 from '../../assets/images/activity2.jpg';
+import Activity3 from '../../assets/images/activity3.jpg';
 
 const CustomCarousel = () => (
-  <div>
-    <Carousel>
-      <Carousel.Item>
-        <img width={900} height={500} alt="900x500" src={EnContruccion} />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      {/* <Carousel.Item>
-        <img width={900} height={500} alt="900x500" src="" />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img width={900} height={500} alt="900x500" src="" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </Carousel.Caption>
-      </Carousel.Item> */}
-    </Carousel>
-  </div>
+  <Carousel width="1200px">
+    <div>
+      <Image src={Activity1} alt="" responsive />
+      <p className="legend">Legend 1</p>
+    </div>
+    <div>
+      <Image src={Activity2} alt="" responsive />
+      <p className="legend">Legend 2</p>
+    </div>
+    <div>
+      <Image src={Activity3} alt="" responsive />
+      <p className="legend">Legend 3</p>
+    </div>
+  </Carousel>
 );
 
 export default CustomCarousel;

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col, Image } from 'react-bootstrap';
-import ReactSVG from 'react-svg';
 import Organization from '../../assets/images/selectForms/Organizacion.svg';
 import Old from '../../assets/images/selectForms/Anciano.svg';
 import Volunteer from '../../assets/images/selectForms/voluntario.svg';

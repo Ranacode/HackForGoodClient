@@ -9,3 +9,72 @@
 .navbar ul li {
   font-size: 22px;
 }
+
+footer {
+  background: gray;
+  height: auto;
+}
+
+.socialLogos {
+  text-align: center;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.footerListContainer {
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerListContainer ul {
+  padding: 0;
+}
+
+.footerListContainer ul li {
+  padding: 0.3em;
+  margin: 0 0.7em;
+  font-size: 19px;
+}
+
+.logosContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  align-content: space-between;
+}
+
+.ccSvg {
+  margin: 0 30px;
+  height: 42px;
+}
+
+.landing {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  padding: 25px 0;
+  background: #29d0e2;
+  color: white;
+}
+
+.homeTitles {
+  font-size: 60px;
+}
+
+.homeSubtitles {
+  font-size: 45px;
+}
+
+p {
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: justify;
+  text-justify: inter-word;
+  max-width: 500px;
+}
