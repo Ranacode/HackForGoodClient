@@ -17,7 +17,7 @@ const CustomCarousel = () => (
     </div>
     <div>
       <Image src={Activity3} alt="" responsive />
-      <p className="legend">Legend 3</p>
+      <p className="legend">Legend3</p>
     </div>
   </Carousel>
 );
