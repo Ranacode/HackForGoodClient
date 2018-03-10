@@ -37,7 +37,7 @@ class LoginForm extends Component {
       <Grid>
         <Row className="show-grid">
           <Col xs={8} xsOffset={2} sm={8} smOffset={2} md={8} mdOffset={2} lg={4} lgOffset={4}>
-            <form className="loginForm__container" action="/user/login" method="POST">
+            <form className="loginForm__container customLogin" action="/user/login" method="POST">
               <FormGroup>
                 <InputGroup>
                   <InputGroup.Addon>
@@ -48,6 +48,8 @@ class LoginForm extends Component {
                     type="tel"
                     value={phone}
                     name="phone"
+                    placeholder="Ingresa tú número aquí"
+                    bsSize="large"
                     onChange={this.handleChange}
                   />
                 </InputGroup>
@@ -60,6 +62,8 @@ class LoginForm extends Component {
                     required
                     value={email}
                     name="email"
+                    placeholder="Ingresa tú correo electrónico aquí"
+                    bsSize="large"
                     onChange={this.handleChange}
                   />
                 </InputGroup>
@@ -72,8 +76,23 @@ class LoginForm extends Component {
                   name="password"
                   value={password}
                   onChange={this.handleChange}
+                  style={{ margin: '5px 0' }}
+                  placeholder="Ingresa tú contraseña aquí"
+                  bsSize="large"
                 />
-                <Button type="submit">Entrar en BICUO</Button>
+                <Button
+                  style={{
+                    margin: '10px 2px',
+                    fontSize: 24,
+                    background: '#29d0e2',
+                    color: 'white',
+                  }}
+                  bsSize="large"
+                  block
+                  type="submit"
+                >
+                  Entrar en BICUO
+                </Button>
               </FormGroup>
             </form>
           </Col>
