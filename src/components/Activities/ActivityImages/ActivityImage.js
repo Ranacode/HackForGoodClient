@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Col, Image } from 'react-bootstrap';
-import PropTypes from 'prop-types';
 import ActivityModal from './ActivityModal';
 
 class ActivityImage extends Component {

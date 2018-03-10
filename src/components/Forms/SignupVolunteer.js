@@ -1,5 +1,14 @@
 import React, { Component } from 'react';
-import { FormGroup, FormControl, ControlLabel, InputGroup, Radio, Button } from 'react-bootstrap';
+import {
+  FormGroup,
+  FormControl,
+  ControlLabel,
+  InputGroup,
+  Radio,
+  Button,
+  Image,
+} from 'react-bootstrap';
+import RegisterButton from '../../assets/images/buttons/REGISTRARSE.svg';
 
 class SignupForm extends Component {
   state = {
@@ -24,7 +33,7 @@ class SignupForm extends Component {
     });
   };
 
-  validateGeneralData = () => 'success';
+  validateGeneralData = () => null;
 
   render() {
     const {
@@ -34,14 +43,7 @@ class SignupForm extends Component {
       <form className="form__container" action="/user/login" method="POST">
         <FormGroup controlId="formInlineLaneGeneral" validationState={this.validateGeneralData()}>
           <ControlLabel>Nombre</ControlLabel>
-          <FormControl
-            placeholder="Nombre aqui"
-            required
-            type="text"
-            value={name}
-            name="name"
-            onChange={this.handleChange}
-          />
+          <FormControl required type="text" value={name} name="name" onChange={this.handleChange} />
           <FormControl.Feedback />
           <ControlLabel>Apellidos</ControlLabel>
           <FormControl
@@ -87,6 +89,15 @@ class SignupForm extends Component {
             />
           </InputGroup>
         </FormGroup>
+        <FormGroup controlId="formControlsSelectMultiple">
+          <ControlLabel>Multiple select</ControlLabel>
+          <FormControl componentClass="select">
+            <option value="select">Ciudad </option>
+            <option value="laspalmas">Las Palmas de G.C</option>
+            <option value="telde">Telde</option>
+            <option value="agaete">Agaete</option>
+          </FormControl>
+        </FormGroup>
         <FormGroup>
           <InputGroup>
             <InputGroup.Addon>
@@ -114,7 +125,9 @@ class SignupForm extends Component {
           />
           <FormControl.Feedback />
         </FormGroup>
-        <Button type="submit">¡Quiero registrarme!</Button>
+        <Button className="removeButtonStyles" type="submit">
+          <Image src={RegisterButton} style={{ width: 290, height: 'auto' }} />
+        </Button>
       </form>
     );
   }
