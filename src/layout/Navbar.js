@@ -11,7 +11,7 @@ class CustomNavbar extends Component {
       <Navbar collapseOnSelect fixedTop className="navbar">
         <Navbar.Header>
           <Navbar.Brand>
-            <ReactSVG path={bicuoLogo} style={{ width: 195, height: 'auto' }} />
+            <ReactSVG path={bicuoLogo} style={{ width: 220, height: 'auto' }} />
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>

@@ -1,25 +1,76 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col, Image } from 'react-bootstrap';
+import { Grid, Row, Col, Image, Popover, OverlayTrigger } from 'react-bootstrap';
 import Organization from '../../assets/images/selectForms/Organizacion.svg';
 import Old from '../../assets/images/selectForms/Anciano.svg';
 import Volunteer from '../../assets/images/selectForms/voluntario.svg';
+import OrganizationCheck from '../../assets/images/selectForms/OrganizacionCheck.svg';
+import VolunteerCheck from '../../assets/images/selectForms/VoluntarioCheck.svg';
+import OldCheck from '../../assets/images/selectForms/AncianoCheck.svg';
 
 import './SelectForm.css';
 
 class SelectForm extends Component {
-  state = {};
   render() {
+    const popoverOld = (
+      <Popover id="popover-trigger-focus" title="USUARIOS">
+        <strong>Este es el formulario para los protagonistas de la plataforma</strong> Únete a
+        nosotros
+      </Popover>
+    );
+
+    const popoverOrganization = (
+      <Popover id="popover-trigger-focus-organization" title="ASOCIACIONES">
+        <strong>Si eres una asociación, este es tu formulario</strong> Únete a nosotros
+      </Popover>
+    );
+
+    const popoverVolunteer = (
+      <Popover id="popover-trigger-focus-volunteer" title="VOLUNTARIOS">
+        <strong>
+          Si tienes la actitud y energía necesarias para ser voluntario, este es tu formulario
+        </strong>{' '}
+        Únete a nosotros
+      </Popover>
+    );
     return (
       <Grid className="selectGrid">
         <Row>
           <Col md={4}>
-            <Image src={Old} />
+            <OverlayTrigger trigger={['hover', 'focus']} placement="bottom" overlay={popoverOld}>
+              <Image
+                src={this.props.selectedForm === 'old_form' ? OldCheck : Old}
+                name="old_form"
+                onClick={this.props.handleClick}
+              />
+            </OverlayTrigger>
           </Col>
           <Col md={4}>
-            <Image src={Organization} />
+            <OverlayTrigger
+              trigger={['hover', 'focus']}
+              placement="bottom"
+              overlay={popoverOrganization}
+            >
+              <Image
+                src={
+                  this.props.selectedForm === 'organization_form' ? OrganizationCheck : Organization
+                }
+                name="organization_form"
+                onClick={this.props.handleClick}
+              />
+            </OverlayTrigger>
           </Col>
           <Col md={4}>
-            <Image src={Volunteer} />
+            <OverlayTrigger
+              trigger={['hover', 'focus']}
+              placement="bottom"
+              overlay={popoverVolunteer}
+            >
+              <Image
+                src={this.props.selectedForm === 'volunteer_form' ? VolunteerCheck : Volunteer}
+                name="volunteer_form"
+                onClick={this.props.handleClick}
+              />
+            </OverlayTrigger>
           </Col>
         </Row>
       </Grid>
