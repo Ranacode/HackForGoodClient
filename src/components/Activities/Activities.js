@@ -17,12 +17,13 @@ class Activities extends Component {
         image: Activity1,
         localization: {
           city: 'Las Palmas de G.C',
-          latitude: 88.0002211,
-          longitude: 78.939191,
+          latitude: 28.133094,
+          longitude: -15.440125,
         },
         information:
           'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus error laudantium repellat, dolor mollitia eum laborum odio ipsa tempore vitae commodi temporibus et at consequatur delectus eaque possimus nihil reiciendis.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus error laudantium repellat, dolor mollitia eum laborum odio ipsa tempore vitae commodi temporibus et at consequatur delectus eaque possimus nihil reiciendis.',
         deadline: new Date().toLocaleDateString(),
+        time: new Date().toLocaleTimeString(),
       },
       {
         id: '28312832',
@@ -30,8 +31,8 @@ class Activities extends Component {
         image: Activity2,
         localization: {
           city: 'Las Palmas de G.C',
-          latitude: 88.0002211,
-          longitude: 78.939191,
+          latitude: 28.125865,
+          longitude: -15.43747,
         },
         information:
           'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus error laudantium repellat, dolor mollitia eum laborum odio ipsa tempore vitae commodi temporibus et at consequatur delectus eaque possimus nihil reiciendis.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus error laudantium repellat, dolor mollitia eum laborum odio ipsa tempore vitae commodi temporibus et at consequatur delectus eaque possimus nihil reiciendis.',
@@ -43,8 +44,8 @@ class Activities extends Component {
         image: Activity3,
         localization: {
           city: 'Las Palmas de G.C',
-          latitude: 88.0002211,
-          longitude: 78.939191,
+          latitude: 28.120471,
+          longitude: -15.428245,
         },
         information:
           'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus error laudantium repellat, dolor mollitia eum laborum odio ipsa tempore vitae commodi temporibus et at consequatur delectus eaque possimus nihil reiciendis.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus error laudantium repellat, dolor mollitia eum laborum odio ipsa tempore vitae commodi temporibus et at consequatur delectus eaque possimus nihil reiciendis.',

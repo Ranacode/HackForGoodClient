@@ -1,29 +1,10 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 
-const AnyReactComponent = ({ text }) => (
-  <div
-    style={{
-      position: 'relative',
-      color: 'white',
-      background: 'red',
-      height: 40,
-      width: 60,
-      top: -20,
-      left: -30,
-    }}
-  >
-    {text}
-  </div>
-);
+const AnyReactComponent = ({ text }) => <i className="fas fa-map-marker-alt fa-3x" />;
 
 class SimpleMap extends Component {
   state = {};
-
-  static defaultProps = {
-    center: { lat: 59.95, lng: 30.33 },
-    zoom: 11,
-  };
 
   render() {
     return (
@@ -32,7 +13,11 @@ class SimpleMap extends Component {
         defaultCenter={this.props.center}
         defaultZoom={this.props.zoom}
       >
-        <AnyReactComponent lat={59.955413} lng={30.337844} text="Kreyser Avrora" />
+        <AnyReactComponent
+          lat={this.props.center.lat}
+          lng={this.props.center.lng}
+          text={this.props.title}
+        />
       </GoogleMapReact>
     );
   }

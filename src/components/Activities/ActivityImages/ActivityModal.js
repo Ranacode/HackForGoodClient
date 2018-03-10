@@ -12,19 +12,39 @@ const ActivityModal = props => (
       </Panel>
     </Modal.Header>
     <Modal.Body>
-      <Panel.Body>{props.data.information}</Panel.Body>
+      <Panel.Body>
+        <p style={{ width: '100%', textAlign: 'justify' }}>{props.data.information}</p>
+      </Panel.Body>
       <div style={{ width: '100%', height: '400px' }}>
-        <SimpleMap />
+        <SimpleMap
+          center={{ lat: props.data.localization.latitude, lng: props.data.localization.longitude }}
+          zoom={16}
+          title={props.data.title}
+        />
       </div>
     </Modal.Body>
     <Modal.Footer>
       <Panel>
-        <Panel.Footer>
-          <p>Fecha fijada para la actividad: </p>
-          {props.data.deadline}
+        <Panel.Footer
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            flexDirection: 'column',
+            alignItems: 'middle',
+          }}
+        >
+          <p>
+            <strong>Fecha fijada para la actividad:</strong>
+          </p>
+          <p>
+            <em>{props.data.deadline} </em>
+            ~ <em>{props.data.time}</em>
+          </p>
         </Panel.Footer>
       </Panel>
-      <Button onClick={props.onHide}>Cerrar</Button>
+      <Button bsSize="primary" onClick={props.onHide}>
+        Cerrar
+      </Button>
     </Modal.Footer>
   </Modal>
 );

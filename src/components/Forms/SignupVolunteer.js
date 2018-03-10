@@ -125,8 +125,8 @@ class SignupForm extends Component {
           />
           <FormControl.Feedback />
         </FormGroup>
-        <Button className="removeButtonStyles" type="submit">
-          <Image src={RegisterButton} style={{ width: 290, height: 'auto' }} />
+        <Button block className="removeButtonStyles" type="submit">
+          <Image src={RegisterButton} style={{ width: 250, height: 'auto' }} />
         </Button>
       </form>
     );
