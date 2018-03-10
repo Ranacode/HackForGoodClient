@@ -9,11 +9,11 @@ const CustomCarousel = () => (
   <Carousel dynamicHeight width="1000">
     <div>
       <Image src={Activity1} alt="" responsive />
-      <p className="legend">Legend 1</p>
+      <p className="legend">OPORTUNIDAD DE VIAJE</p>
     </div>
     <div>
       <Image src={Activity2} alt="" responsive />
-      <p className="legend">Legend 2</p>
+      <p className="legend">CURSO DE FORMACIÓN EN TAREAS DE CARPINTERÍA</p>
     </div>
     <div>
       <Image src={Activity3} alt="" responsive />

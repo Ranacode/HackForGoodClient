@@ -12,9 +12,7 @@ const ActivityModal = props => (
       </Panel>
     </Modal.Header>
     <Modal.Body>
-      <Panel.Body>
-        <p style={{ width: '100%', textAlign: 'justify' }}>{props.data.information}</p>
-      </Panel.Body>
+      <Panel.Body>{props.data.information}</Panel.Body>
       <div style={{ width: '100%', height: '400px' }}>
         <SimpleMap
           center={{ lat: props.data.localization.latitude, lng: props.data.localization.longitude }}
@@ -40,6 +38,14 @@ const ActivityModal = props => (
             <em>{props.data.deadline} </em>
             ~ <em>{props.data.time}</em>
           </p>
+          <Button
+            style={{
+ fontFamily: 'MyriadPro', fontSize: 24, width: '50%', margin: '0 auto',
+}}
+            bsSize="primary"
+          >
+            Apuntarme a esta actividad
+          </Button>
         </Panel.Footer>
       </Panel>
       <Button bsSize="primary" onClick={props.onHide}>

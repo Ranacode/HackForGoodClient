@@ -14,3 +14,7 @@
 .form__container label {
   margin: 0.5em;
 }
+
+.radio-inline {
+  display: inline !important;
+}

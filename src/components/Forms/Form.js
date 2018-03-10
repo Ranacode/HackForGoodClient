@@ -50,7 +50,7 @@ class Form extends Component {
       <Grid>
         <SelectForm selectedForm={this.state.actualForm} handleClick={this.showForm} />
         <Row className="show-grid">
-          <Col xs={8} xsOffset={2} sm={8} smOffset={2} md={8} mdOffset={2} lg={4} lgOffset={4}>
+          <Col xs={8} xsOffset={2} sm={8} smOffset={2} md={8} mdOffset={2} lg={6} lgOffset={3}>
             {this.renderSelectedForm()}
           </Col>
         </Row>

@@ -125,8 +125,17 @@ class SignupForm extends Component {
           />
           <FormControl.Feedback />
         </FormGroup>
-        <Button block className="removeButtonStyles" type="submit">
-          <Image src={RegisterButton} style={{ width: 200, height: 'auto' }} />
+        <Button
+          block
+          style={{
+            fontFamily: 'MyriadPro-Bold',
+            fontSize: 24,
+            fontWeight: 'bold',
+            background: '#29D0e2',
+          }}
+          bsSize="primary"
+        >
+          QUIERO REGISTRARME
         </Button>
       </form>
     );
