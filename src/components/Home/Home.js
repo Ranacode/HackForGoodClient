@@ -7,7 +7,7 @@ class Home extends Component {
   state = {};
   render() {
     return (
-      <div>
+      <div style={{ marginTop: '5%', textAlign: 'center' }}>
         <h1> INICIO</h1>
         <Grid>
           <Row>
